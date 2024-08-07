@@ -395,7 +395,7 @@ article .icon {
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
-  background: (250, 250, 250);
+  background: rgb(250, 250, 250);
   margin: 2rem auto;
   padding: 0.5rem;
 }
@@ -429,4 +429,187 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+.multiple-text {
+  font-size: 2rem; /* Adjust as needed */
+  color: black; /* Adjust as needed */
+}
+
+/* Purple Mode Specific Styles */
+.purple-mode {
+  --bg-color: #f3e5f5;
+  --text-color: #4a148c;
+  --primary-color: #ab47bc;
+  --secondary-color: #7e57c2;
+}
+
+.purple-mode body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.purple-mode a {
+  color: var(--primary-color);
+}
+
+.purple-mode a:hover {
+  color: var(--secondary-color);
+}
+
+.purple-mode .btn-color-1 {
+  background: linear-gradient(135deg, #ab47bc, #7e57c2);
+  color: white;
+}
+
+.purple-mode .btn-color-2 {
+  border: 0.1rem solid var(--primary-color);
+  background: none;
+}
+
+.purple-mode .btn-color-2:hover {
+  border: 0.1rem solid rgb(255, 255, 255);
+}
+
+.purple-mode .navbar,
+.purple-mode .btn-color-1 {
+  background: linear-gradient(135deg, #ab47bc, #7e57c2);
+}
+
+.purple-mode .multiple-text {
+  color: var(--text-color);
+}
+/* Dark Mode Specific Styles */
+.dark-mode {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --primary-color: #bb86fc;
+  --secondary-color: #03dac6;
+}
+
+.dark-mode body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.dark-mode a {
+  color: var(--primary-color);
+}
+
+.dark-mode a:hover {
+  color: var(--secondary-color);
+}
+
+.dark-mode .btn-color-1 {
+  background: linear-gradient(135deg, #bb86fc, #03dac6);
+  color: var(--text-color);
+}
+
+.dark-mode .btn-color-2 {
+  border: 0.1rem solid var(--primary-color);
+  background: none;
+}
+
+.dark-mode .btn-color-2:hover {
+  border: 0.1rem solid var(--text-color);
+}
+
+.dark-mode .navbar,
+.dark-mode .btn-color-1 {
+  background: linear-gradient(135deg, #bb86fc, #03dac6);
+}
+
+.dark-mode .multiple-text {
+  color: var(--text-color);
+}
+
+/* Green Mode Specific Styles */
+.green-mode {
+  --bg-color: #e8f5e9;
+  --text-color: #1b5e20;
+  --primary-color: #66bb6a;
+  --secondary-color: #43a047;
+}
+
+.green-mode body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.green-mode a {
+  color: var(--primary-color);
+}
+
+.green-mode a:hover {
+  color: var(--secondary-color);
+}
+
+.green-mode .btn-color-1 {
+  background: linear-gradient(135deg, #66bb6a, #43a047);
+  color: white;
+}
+
+.green-mode .btn-color-2 {
+  border: 0.1rem solid var(--primary-color);
+  background: none;
+}
+
+.green-mode .btn-color-2:hover {
+  border: 0.1rem solid rgb(255, 255, 255);
+}
+
+.green-mode .navbar,
+.green-mode .btn-color-1 {
+  background: linear-gradient(135deg, #66bb6a, #43a047);
+}
+
+.green-mode .multiple-text {
+  color: var(--text-color);
+}
+/* Original Mode Specific Styles */
+.original-mode .nav-links a {
+  color: #000; /* Black font color for navbar links */
+}
+/* Original Mode Specific Styles */
+.original-mode {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --primary-color: #6200ea;
+  --secondary-color: #03dac6;
+}
+
+.original-mode body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.original-mode a {
+  color: var(--primary-color);
+}
+
+.original-mode a:hover {
+  color: var(--secondary-color);
+}
+
+.original-mode .btn-color-1 {
+  background: linear-gradient(135deg, #6200ea, #03dac6);
+  color: white;
+}
+
+.original-mode .btn-color-2 {
+  border: 0.1rem solid var(--primary-color);
+  background: none;
+}
+
+.original-mode .btn-color-2:hover {
+  border: 0.1rem solid var(--text-color);
+}
+
+.original-mode .navbar,
+.original-mode .btn-color-1 {
+  background: linear-gradient(135deg, #6200ea, #03dac6);
+}
+
+.original-mode .multiple-text {
+  color: var(--text-color);
 }
