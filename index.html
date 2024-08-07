@@ -99,12 +99,32 @@
         .purple-mode .multiple-text {
             color: #4a148c; /* Dark purple text in purple mode */
         }
+
+        /* Icon styling */
+        .icon {
+            width: 32px;
+            height: 32px;
+        }
+
+        /* Dark mode icon color change */
+        .dark-mode .icon {
+            filter: invert(1);
+        }
+        .logo {
+    font-size: 2rem; /* Adjust the size as needed */
+    font-weight: bold; /* Makes the text bold */
+    color: var(--text-color, #000); /* Ensure the color is consistent with the mode */
+}
+
+        
+
+        
     </style>
 </head>
 <body class="original-mode">
     <!-- Color Mode Selector -->
     <div class="color-mode-selector">
-      <button onclick="setColorMode('original-mode')">Original Mode</button> <!-- Added button -->
+      <button onclick="setColorMode('original-mode')">Light Mode</button> <!-- Added button -->
         <button onclick="setColorMode('dark-mode')">Dark Mode</button>
         <button onclick="setColorMode('green-mode')">Green Mode</button>
         <button onclick="setColorMode('purple-mode')">Purple Mode</button>
@@ -114,7 +134,7 @@
 
     <!-- Navigation -->
     <nav id="desktop-nav">
-        <div class="logo">Asdaque</div>
+        <div class="logo">ASDAQUE</div>
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
@@ -125,7 +145,7 @@
         </div>
     </nav>
     <nav id="hamburger-nav">
-        <div class="logo">Asdaque Alam</div>
+        <div class="logo">Asdaque</div>
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
